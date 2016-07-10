@@ -30,7 +30,7 @@ React Native Starter Kit
 
 ### Getting Started
 
-1. Ensure you've followed the [React Native - Get Started Guide](https://facebook.github.io/react-native/docs/getting-started.html) for the platform/s of choice
+1. Ensure you've followed the [React Native - Get Started Guide](https://facebook.github.io/react-native/docs/getting-started.html) for the platform/s of choice. Also consider reading the [Android setup guide](https://facebook.github.io/react-native/releases/0.24/docs/android-setup.html).
 2. Clone this project
 3. Run `npm install` from root directory
 

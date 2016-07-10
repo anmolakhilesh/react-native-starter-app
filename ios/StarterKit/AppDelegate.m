@@ -8,7 +8,8 @@
  */
 
 #import "AppDelegate.h"
-
+ 
+#import "RCTBundleURLProvider.h"
 #import "RCTRootView.h"
 
 @implementation AppDelegate
@@ -31,7 +32,8 @@
    * on the same Wi-Fi network.
    */
 
-  // jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle"];
+  [[RCTBundleURLProvider sharedSettings] setDefaults];
+  // jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 
   /**
    * OPTION 2
@@ -48,7 +50,7 @@
    * Autoload which one, depending on environment type
    */
   #ifdef DEBUG
-    jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle"];
+    jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
   #else
     jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
   #endif
